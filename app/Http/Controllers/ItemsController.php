@@ -45,6 +45,15 @@ use \App\Item;
           'item' => $item,
           'want_users' => $want_users,
       ]);
+      
+      $have_users = $item->have_users;
+
+      return view('items.show', [
+          'item' => $item,
+          'have_users' => $have_users,
+      ]);
+      
     }
     
+
   }
